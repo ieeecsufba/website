@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Computer Society UFBA</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <!-- NAVIGATION HEADER -->
+    <nav id="nav" class="relative bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./" class="flex items-center">
+                <img src="img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE Computer Society UFBA" id="logo-ieeecs"
+                    class="h-10 object-contain">
+            </a>
+
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" type="button"
+                class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none" aria-label="Abrir Menu">
+                <svg id="menu-icon-open" class="w-7 h-7 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+                <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Links no Desktop (Sempre visíveis no computador) -->
+            <div class="hidden md:flex md:items-center">
+                <ul class="routes flex gap-x-8 text-center">
+                    <li><a href="../" class="font-medium hover:text-[#FDA218] transition">Início</a></li>
+                    <li><a href="../projects/" class="font-medium hover:text-[#FDA218] transition">Projetos</a></li>
+                    <li><a href="../events/" class="font-medium hover:text-[#FDA218] transition">Eventos</a></li>
+                    <li><a href="./" class="active font-medium hover:text-[#FDA218] transition">Estatuto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown (Aparece abaixo da nav ao clicar) -->
+        <div id="menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-6 z-50">
+            <ul class="routes flex flex-col gap-y-4 text-left">
+                <li><a href="../" class="block font-medium text-gray-800 hover:text-[#FDA218] transition py-1">Início</a>
+                </li>
+                <li><a href="projects/"
+                        class="block font-medium text-gray-800 hover:text-[#FDA218] transition py-1">Projetos</a></li>
+                <li><a href="events/"
+                        class="block font-medium text-gray-800 hover:text-[#FDA218] transition py-1">Eventos</a></li>
+                <li><a href="statute/"
+                        class="block font-medium text-gray-800 hover:text-[#FDA218] transition py-1">Estatuto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="w-full mx-auto">
+        <!-- BANNER / HERO -->
+        <header class="banner w-full lg:grid lg:grid-cols-2 lg:px-12 items-center gap-12">
+            <section class="flex flex-col items-center lg:items-start justify-between">
+                <h1 class="mb-4 text-center lg:text-left" translate="no">IEEE Computer Society UFBA</h1>
+                <p class="slogan text-base lg:text-lg mb-[2rem] lg:mb-[3rem] text-center lg:text-left" translate="no">
+                    Empowering Computer Science and Engineering Professionals to Fuel Continued Advancement
+                </p>
+                <ul class="grid grid-cols-2 md:grid-cols-4 gap-[1rem] md:gap-[2rem] w-full">
+                    <li class="flex flex-col items-center lg:items-start">
+                        <h3 class="text-4xl lg:text-5xl font-bold italic text-[#FDA218] stats-count" num="18">+18</h3>
+                        <span class="text-sm text-gray-600">membros ativos</span>
+                    </li>
+                    <li class="flex flex-col items-center lg:items-start">
+                        <h3 class="text-4xl lg:text-5xl font-bold italic text-[#FDA218] stats-count" num="41">+41</h3>
+                        <span class="text-sm text-gray-600">novos voluntários</span>
+                    </li>
+                    <li class="flex flex-col items-center lg:items-start">
+                        <h3 class="text-4xl lg:text-5xl font-bold italic text-[#FDA218] stats-count" num="3">+3</h3>
+                        <span class="text-sm text-gray-600">prêmios conquistados</span>
+                    </li>
+                    <li class="flex flex-col items-center lg:items-start">
+                        <h3 class="text-4xl lg:text-5xl font-bold italic text-[#FDA218] stats-count" num="5">+5</h3>
+                        <span class="text-sm text-gray-600">projetos concluídos</span>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="w-full hidden lg:block h-[400px] overflow-hidden landscape rounded-xl">
+                <img src="img/equipe-cs.jpeg" class="w-full h-full object-cover object-center"
+                    alt="Equipe IEEE CS UFBA" />
+            </div>
+        </header>
+
+        <!-- QUEM SOMOS -->
+        <section class="flex flex-col items-center py-16 px-6 bg-white">
+            <h2 class="text-3xl font-bold text-center mb-[1.5rem]">Quem somos?</h2>
+            <div class="flex items-center justify-center flex-wrap-reverse md:flex-wrap w-[90%] lg:w-[70%] gap-8">
+                <div class="flex flex-col items-center">
+                    <p class="mb-6 text-justify md:text-gray-700 leading-relaxed text-justify">
+
+                        O <span class="font-bold text-gray-900">IEEE Computer Society Student Chapter UFBA (CS
+                            UFBA)</span> é a sociedade técnica de computação do <span
+                            class="font-bold text-gray-900">Ramo Estudantil IEEE UFBA</span>. Formado por estudantes de
+                        diferentes cursos, representamos a <span class="font-bold text-gray-900">IEEE Computer Society
+                            na UFBA</span>, promovendo a tecnologia em benefício da humanidade.
+
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- O que é o IEEE -->
+                        <div
+                            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="p-3 bg-amber-50 rounded-lg text-[#FDA218]">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <h3 class="text-2xl font-bold text-gray-900">O que é o IEEE?</h3>
+                                </div>
+                                <p class="text-gray-700 leading-relaxed text-justify">
+                                    O <strong>Institute of Electrical and Electronics Engineers (IEEE)</strong> é a
+                                    maior organização profissional técnica do mundo dedicada ao avanço da tecnologia em
+                                    benefício da humanidade. Com centenas de milhares de membros globais, o IEEE
+                                    desenvolve padrões industriais, publica pesquisas científicas de ponta e promove
+                                    eventos e conferências globais.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- O que é a Computer Society -->
+                        <div
+                            class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="p-3 bg-amber-50 rounded-lg text-[#FDA218]">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <h3 class="text-2xl font-bold text-gray-900">O que é a Computer Society?</h3>
+                                </div>
+                                <p class="text-gray-700 leading-relaxed text-justify">
+                                    A <strong>IEEE Computer Society (IEEE-CS)</strong> é a maior das sociedades técnicas
+                                    pertencentes ao IEEE, sendo a principal fonte de informação, inspiração e
+                                    colaboração em Ciência da Computação e Engenharia. Ela conecta acadêmicos,
+                                    estudantes e profissionais da área, provendo publicações acadêmicas, certificações e
+                                    redes de capítulos estudantis pelo mundo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+
+                    <div class="mx-auto flex items-center justify-center flex-col w-full mt-8">
+                        <a class="btn-secondary-black text-sm px-6 py-3" href="projects/">Conheça nossos projetos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSA HISTÓRIA -->
+        <section class="flex flex-col items-center py-16 px-6 bg-[#fafafa]">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossa história</h2>
+            <div class="w-full lg:w-[80%] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="landscape h-72 w-full rounded-xl overflow-hidden shadow-lg">
+                    <img src="img/sbrm-2024.JPG" alt="Imagem da História da CS" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="flex flex-col gap-4 text-gray-700 leading-relaxed text-base">
+                    <p class="text-justify">
+                        A CS UFBA é o capítulo mais antigo do Ramo Estudantil IEEE UFBA e, assim como o próprio ramo,
+                        passou por momentos de renovação. Durante os anos correntes de sua existência, desenvolveu
+                        atividades e capacitações voltadas aos membros e não membros do ramo, com foco na computação e
+                        áreas correlatas. Entre suas atividades recentes, destacam-se os desafios, grupos de estudos em
+                        programação, palestras e workshops, além de representações em eventos do IEEE a nível regional,
+                        nacional e internacional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONHEÇA A NOSSA DIRETORIA -->
+        <section class="flex flex-col items-center py-16 px-6 bg-white">
+            <h2 class="text-3xl font-bold text-center mb-12">Conheça a nossa diretoria!</h2>
+            <div class="flex flex-wrap justify-center w-full lg:w-[90%] gap-8">
+                <!-- Ariel -->
+                <div class="director-card">
+                    <div class="director-img-wrapper">
+                        <img src="img/diretoria/ariel.jpg" alt="Ariel Santos">
+                    </div>
+                    <div class="director-name">Ariel<br>Santos</div>
+                    <div class="director-role">Chair</div>
+                </div>
+
+                <!-- Sofia -->
+                <div class="director-card">
+                    <div class="director-img-wrapper">
+                        <img src="img/diretoria/sophia.png" alt="Sofia Sacramento">
+                    </div>
+                    <div class="director-name">Sofia<br>Sacramento</div>
+                    <div class="director-role">Vice-chair</div>
+                </div>
+
+                <!-- Anderson -->
+                <div class="director-card">
+                    <div class="director-img-wrapper">
+                        <img src="img/diretoria/anderson.jpg" alt="Anderson Carvalho">
+                    </div>
+                    <div class="director-name">Anderson<br>Carvalho</div>
+                    <div class="director-role">Secretário</div>
+                </div>
+
+                <!-- Akhenaton -->
+                <div class="director-card">
+                    <div class="director-img-wrapper">
+                        <img src="img/diretoria/akhenaton.jpeg" alt="Akhenaton Gomes">
+                    </div>
+                    <div class="director-name">Akhenaton<br>Gomes</div>
+                    <div class="director-role">Tesoureiro</div>
+                </div>
+
+                <!-- Eduardo -->
+                <div class="director-card">
+                    <div class="director-img-wrapper">
+                        <img src="img/diretoria/eduardo.jpg" alt="Eduardo Coutinho">
+                    </div>
+                    <div class="director-name">Eduardo<br>Coutinho</div>
+                    <div class="director-role">Webmaster</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE CS UFBA" style="height: 45px;">
+                <p>Capítulo Estudantil IEEE Computer Society da Universidade Federal da Bahia (UFBA).</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="./">Início</a></li>
+                    <li><a href="projects/">Projetos</a></li>
+                    <li><a href="events/">Eventos e Ações</a></li>
+                    <li><a href="statute/">Estatuto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Redes Sociais & Links</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/ieeecsufba/" target="_blank" rel="noopener">Instagram
+                            (@ieeecsufba)</a></li>
+                    <li><a href="https://www.linkedin.com/company/ieeecsufba/" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.computer.org" target="_blank" rel="noopener">IEEE Computer Society
+                            Global</a></li>
+                    <li><a href="https://www.ufba.br" target="_blank" rel="noopener">UFBA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 IEEE Computer Society UFBA - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

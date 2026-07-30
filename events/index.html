@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e Ações - IEEE Computer Society UFBA</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <!-- NAVIGATION HEADER -->
+    <nav id="nav" class="relative bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./" class="flex items-center">
+                <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE Computer Society UFBA" id="logo-ieeecs"
+                    class="h-10 object-contain">
+            </a>
+
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" type="button"
+                class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none" aria-label="Abrir Menu">
+                <svg id="menu-icon-open" class="w-7 h-7 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+                <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Links no Desktop (Sempre visíveis no computador) -->
+            <div class="hidden md:flex md:items-center">
+                <ul class="routes flex gap-x-8 text-center">
+                    <li><a href="../" class="font-medium hover:text-[#FDA218] transition">Início</a></li>
+                    <li><a href="../projects/" class="font-medium hover:text-[#FDA218] transition">Projetos</a></li>
+                    <li><a href="../events/" class="font-medium hover:text-[#FDA218] transition">Eventos</a></li>
+                    <li><a href="./" class="active font-medium hover:text-[#FDA218] transition">Estatuto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown (Aparece abaixo da nav ao clicar) -->
+        <div id="menu"
+            class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-6 z-50">
+            <ul class="routes flex flex-col gap-y-4 text-left">
+                <li><a href="../">Início</a></li>
+                <li><a href="../projects/">Projetos</a></li>
+                <li><a href="../events/">Eventos</a></li>
+                <li><a href="../statute/" class="active">Estatuto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="w-full mx-auto py-12">
+        <header class="max-w-6xl mx-auto px-6 mb-12 text-center">
+            <h1 class="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight mb-3">Eventos e Ações</h1>
+            <p class="text-gray-500 text-base max-w-xl mx-auto">Confira as principais ações promovidas pelo capítulo
+                IEEE Computer Society UFBA.</p>
+        </header>
+
+        <article class="max-w-6xl mx-auto px-6">
+            <!-- 4-COLUMN MODERN CARD GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Apresentação da CS para os Calouros -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                    <div class="w-full h-52 overflow-hidden bg-gray-100">
+                        <img src="../img/apresentaçãodacspracalouros.jpeg" alt="Apresentação da CS aos Calouros"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex items-center justify-center text-center">
+                        <h2 class="text-base font-bold text-gray-900 leading-snug">Apresentação da CS aos Calouros</h2>
+                    </div>
+                </div>
+
+                <!-- GPROG 2026.1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                    <div class="w-full h-52 overflow-hidden bg-gray-100">
+                        <img src="../img/gprog2026.1.jpeg" alt="GPROG (Grupo de Estudo em Programação)"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex items-center justify-center text-center">
+                        <h2 class="text-base font-bold text-gray-900 leading-snug">GPROG (Grupo de Estudo em
+                            Programação)</h2>
+                    </div>
+                </div>
+
+                <!-- Workshop de Cibersegurança -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                    <div class="w-full h-52 overflow-hidden bg-gray-100">
+                        <img src="../img/workshopcybersegurança.jpeg" alt="Workshop de CyberSegurança"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex items-center justify-center text-center">
+                        <h2 class="text-base font-bold text-gray-900 leading-snug">Workshop de CyberSegurança</h2>
+                    </div>
+                </div>
+
+                <!-- Desafio Front-end -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+                    <div class="w-full h-52 overflow-hidden bg-gray-100">
+                        <img src="../img/desafiofrontend.jpeg" alt="Desafio Front-end"
+                            class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex items-center justify-center text-center">
+                        <h2 class="text-base font-bold text-gray-900 leading-snug">Desafio Front-end</h2>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE CS UFBA" style="height: 45px;">
+                <p>Capítulo Estudantil IEEE Computer Society da Universidade Federal da Bahia (UFBA).</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../">Início</a></li>
+                    <li><a href="../projects/">Projetos</a></li>
+                    <li><a href="./">Eventos e Ações</a></li>
+                    <li><a href="../statute/">Estatuto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Redes Sociais & Links</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/ieeecsufba/" target="_blank" rel="noopener">Instagram
+                            (@ieeecsufba)</a></li>
+                    <li><a href="https://www.linkedin.com/company/ieeecsufba/" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.computer.org" target="_blank" rel="noopener">IEEE Computer Society
+                            Global</a></li>
+                    <li><a href="https://www.ufba.br" target="_blank" rel="noopener">UFBA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 IEEE Computer Society UFBA - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

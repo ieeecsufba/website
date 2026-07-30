@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatuto - IEEE Computer Society UFBA</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="antialiased min-h-screen">
+
+    <!-- NAVIGATION HEADER -->
+    <nav id="nav" class="relative bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./" class="flex items-center">
+                <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE Computer Society UFBA" id="logo-ieeecs"
+                    class="h-10 object-contain">
+            </a>
+
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" type="button"
+                class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none" aria-label="Abrir Menu">
+                <svg id="menu-icon-open" class="w-7 h-7 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+                <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Links no Desktop (Sempre visíveis no computador) -->
+            <div class="hidden md:flex md:items-center">
+                <ul class="routes flex gap-x-8 text-center">
+                    <li><a href="../" class="font-medium hover:text-[#FDA218] transition">Início</a></li>
+                    <li><a href="../projects/" class="font-medium hover:text-[#FDA218] transition">Projetos</a></li>
+                    <li><a href="../events/" class="font-medium hover:text-[#FDA218] transition">Eventos</a></li>
+                    <li><a href="./" class="active font-medium hover:text-[#FDA218] transition">Estatuto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown (Aparece abaixo da nav ao clicar) -->
+        <div id="menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-6 z-50">
+            <ul class="routes flex flex-col gap-y-4 text-left">
+                <li><a href="../">Início</a></li>
+                <li><a href="../projects/">Projetos</a></li>
+                <li><a href="../events/">Eventos</a></li>
+                <li><a href="./" class="active">Estatuto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="w-full mx-auto py-10">
+        <header class="max-w-6xl mx-auto px-6 mb-6">
+            <h1 class="text-3xl font-bold text-gray-900 leading-tight">Estatuto</h1>
+            <span class="text-sm text-gray-500">Atualizado em 04/2021</span>
+        </header>
+
+        <div class="max-w-6xl mx-auto px-6 mb-8">
+            <p class="text-sm text-justify md:text-left text-gray-700 leading-relaxed mb-6">
+                Esta página é dedicada ao estatuto do capítulo estudantil IEEE Computer Society UFBA. Aqui serão apresentados os regulamentos, as diretrizes de funcionamento, os direitos e deveres dos membros, e a estrutura organizacional do grupo.
+            </p>
+
+            <div class="flex justify-center mb-6">
+                <a href="../pdf/statute.pdf" class="btn-secondary-black text-sm px-6 py-3 flex items-center gap-3 shadow-md hover:shadow-lg" download>
+                    <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm-7 2h14v2H5v-2z"/>
+                    </svg>
+                    <span>Baixar estatuto atualizado (PDF)</span>
+                </a>
+            </div>
+
+            <span class="text-xs text-center block text-gray-500 mb-6">ou leia a documentação abaixo</span>
+
+            <!-- PDF VIEW IFRAME -->
+            <div class="w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 mb-12">
+                <iframe class="w-full mx-auto border-0" height="750" src="../pdf/statute.pdf" type="application/pdf"></iframe>
+            </div>
+
+            <!-- TEXTUAL STATUTE BACKUP -->
+            <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100 leading-relaxed text-gray-800">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Artigo 1: Denominação e Fins</h2>
+                <p class="mb-6 text-sm text-gray-700">
+                    <strong>Seção 1.1:</strong> O Capítulo Estudantil IEEE Computer Society da Universidade Federal da Bahia, doravante denominado simplesmente "Capítulo", é uma organização estudantil sem fins lucrativos, filiada ao Ramo Estudantil IEEE UFBA e à IEEE Computer Society internacional, com a finalidade de promover o avanço da computação, engenharia de software e áreas correlatas no âmbito universitário.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Artigo 2: Membros</h2>
+                <p class="mb-6 text-sm text-gray-700">
+                    <strong>Seção 2.1:</strong> Poderão ser membros do Capítulo todos os estudantes de graduação e pós-graduação da Universidade Federal da Bahia com interesse na área de computação, respeitando as normas vigentes do IEEE internacional e do regulamento interno do Ramo Estudantil.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Artigo 3: Estrutura Organizacional</h2>
+                <p class="text-sm text-gray-700">
+                    <strong>Seção 3.1:</strong> O Capítulo é administrado por uma Diretoria Executiva composta por Chair (Presidente), Vice-chair (Vice-Presidente), Secretário, Tesoureiro e Webmaster/Diretores de Projetos, eleitos periodicamente pelos membros ativos.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE CS UFBA" style="height: 45px;">
+                <p>Capítulo Estudantil IEEE Computer Society da Universidade Federal da Bahia (UFBA).</p>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="../">Início</a></li>
+                    <li><a href="../projects/">Projetos</a></li>
+                    <li><a href="../events/">Eventos e Ações</a></li>
+                    <li><a href="./">Estatuto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h4>Redes Sociais & Links</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/ieeecsufba/" target="_blank" rel="noopener">Instagram (@ieeecsufba)</a></li>
+                    <li><a href="https://www.linkedin.com/company/ieeecsufba/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.computer.org" target="_blank" rel="noopener">IEEE Computer Society Global</a></li>
+                    <li><a href="https://www.ufba.br" target="_blank" rel="noopener">UFBA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 IEEE Computer Society UFBA - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
