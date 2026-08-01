@@ -345,6 +345,53 @@ footer {
     color: #888;
 }
 
+/* EVENT HOVER TOOLTIP */
+.event-hover-card {
+    position: relative;
+}
+
+.event-hover-tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    width: max-content;
+    max-width: 240px;
+    background: var(--black-lv3);
+    color: #ffffff;
+    padding: 12px 14px;
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.event-hover-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: var(--black-lv3);
+}
+
+.event-hover-card:hover .event-hover-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.event-hover-tooltip p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     nav#nav {
