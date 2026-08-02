@@ -11,17 +11,46 @@
 <body class="antialiased min-h-screen">
 
     <!-- NAVIGATION HEADER -->
-    <nav id="nav" class="flex flex-row justify-between items-center w-full">
-        <a href="../" class="flex items-center">
-            <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE Computer Society UFBA" id="logo-ieeecs">
-        </a>
+    <nav id="nav" class="relative bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./" class="flex items-center">
+                <img src="../img/IEEE-CS_LogoTM-black.png" alt="Logo IEEE Computer Society UFBA" id="logo-ieeecs"
+                    class="h-10 object-contain">
+            </a>
 
-        <div class="flex items-center gap-x-8">
-            <ul class="routes">
+            <!-- Botão Hambúrguer -->
+            <button id="menu-toggle" type="button"
+                class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none" aria-label="Abrir Menu">
+                <svg id="menu-icon-open" class="w-7 h-7 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+                <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Links no Desktop (Sempre visíveis no computador) -->
+            <div class="hidden md:flex md:items-center">
+                <ul class="routes flex gap-x-8 text-center">
+                    <li><a href="../" class="font-medium hover:text-[#FDA218] transition">Início</a></li>
+                    <li><a href="../projects/" class="font-medium hover:text-[#FDA218] transition">Projetos</a></li>
+                    <li><a href="../events/" class="font-medium hover:text-[#FDA218] transition">Eventos</a></li>
+                    <li><a href="../statute/" class="active font-medium hover:text-[#FDA218] transition">Estatuto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown (Aparece abaixo da nav ao clicar) -->
+        <div id="menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-6 z-50">
+            <ul class="routes flex flex-col gap-y-4 text-left">
                 <li><a href="../">Início</a></li>
                 <li><a href="../projects/">Projetos</a></li>
-                <li><a href="../events/">Eventos e Ações</a></li>
-                <li><a href="./" class="active">Estatuto</a></li>
+                <li><a href="../events/">Eventos</a></li>
+                <li><a href="../statute/" class="active">Estatuto</a></li>
             </ul>
         </div>
     </nav>

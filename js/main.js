@@ -41,3 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Toggle para o Menu Hambúrguer Responsivo
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+    }
+});
